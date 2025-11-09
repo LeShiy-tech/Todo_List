@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header h1 {
+  font-size: 4vw;
+  text-align: center;
+  background-color: rgb(199, 198, 105);
+}
+footer h2 {
+  font-size: 2vw;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.454);
+}
+.main_div {
+  width: 80vw;
+  margin: 0 auto;
+}
+#Task_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Task {
+  width: 20vw;
+  height: 10vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#add_task {
+  margin-left: 4vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 8vh;
+  width: 5vw;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+
+#add_task:hover {
+  background-color: #f0f0f0;
+  border-color: #c7c669;
+}
+
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  margin-top: 5vh;
+}
+
+#all_task {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  font-size: 1vw;
+}
+
+#completed_task {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+
+#dont_completed_task {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+#to_do_list {
+  margin-top: 5vh;
+  width: 50%;
+  margin: 5vh auto;
+  transition: all 0.3s ease;
+}
+
+#all_task:hover {
+  background-color: #f0f0f0;
+  border-color: #c7c669;
+}
+
+#completed_task:hover {
+  background-color: #f0f0f0;
+  border-color: #c7c669;
+}
+
+#dont_completed_task:hover {
+  background-color: #f0f0f0;
+  border-color: #c7c669;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+  border-color: #c7c669;
+}
+
+.task-text {
+  font-size: 1.2vw;
+  color: #333;
+  flex-grow: 1;
+}
+
+.task.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: aquamarine;
+}
+
+.task-checkbox:hover {
+  transform: scale(1.1);
+}
