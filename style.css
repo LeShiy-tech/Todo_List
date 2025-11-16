@@ -104,13 +104,13 @@ footer h2 {
 
 .task {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
   border-radius: 10px;
   border: 2px solid #e0e0e0;
+  justify-content: left;
 }
 
 .task:hover {
@@ -121,6 +121,7 @@ footer h2 {
 .task-text {
   font-size: 1.2vw;
   color: #333;
+  margin-left: 20px;
 }
 
 .task.completed .task-text {
@@ -133,4 +134,35 @@ footer h2 {
   height: 20px;
   cursor: pointer;
   accent-color: aquamarine;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.edit-input {
+  font-size: 1.2vw;
+  padding: 5px 10px;
+  border: 2px solid #c7c669;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  margin-left: 20px;
 }
